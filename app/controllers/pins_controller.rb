@@ -42,7 +42,7 @@ class PinsController < ApplicationController
   private # private method below
 
   def pin_params #define pin parameters and permit only title and description
-    params.require(:pin).permit(:title, :description)
+    params.require(:pin).permit(:title, :description, :image)
   end
 
   def find_pin

@@ -9,6 +9,8 @@ Rails.application.configure do
   # NEEDED FOR DEVISE: In production host: should be set to the actual host!
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  #NEEDED FOR PAPERCLIP:
+  Paperclip.options[:command_path] = "/usr/bin/"
   # Do not eager load code on boot.
   config.eager_load = false
 

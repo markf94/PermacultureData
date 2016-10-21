@@ -5,7 +5,8 @@
 			%h2= link_to pin.commonname, pin
 			%span.glyphicon.glyphicon-leaf
 			%span.glyphicon.glyphicon-heart
-			%span.glyphicon.glyphicon-star
+			- if pin.edible == "Yes"
+				%span.glyphicon.glyphicon-star
 			%p.user
 				= pin.species
 

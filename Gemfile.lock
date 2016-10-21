@@ -43,6 +43,9 @@ GEM
     autoprefixer-rails (6.5.0.1)
       execjs
     bcrypt (3.1.11)
+    bootstrap-glyphicons (0.0.1)
+      railties (>= 3.0)
+      sass (>= 3.2)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -191,6 +194,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_votable (~> 0.10.0)
+  bootstrap-glyphicons (~> 0.0.1)
   bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
   coffee-rails (~> 4.2)

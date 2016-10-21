@@ -1,6 +1,7 @@
 class PinsController < ApplicationController
-
-  before_action :find_pin, only: [:show, :edit, :update, :destroy]
+  # before action finds the current pin
+  before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index #holds all the pins in reverse chronological order
     @pins = Pin.all.order("created_at DESC")
@@ -39,6 +40,11 @@ class PinsController < ApplicationController
   def show
   end
 
+  def upvote
+    @pin.upvote_by current_user
+    redirect_to :back
+  end
+
   private # private method below
 
   def pin_params #define pin parameters and permit only title and description
@@ -48,5 +54,7 @@ class PinsController < ApplicationController
   def find_pin
     @pin = Pin.find(params[:id])
   end
+
+
 
 end

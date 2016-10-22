@@ -4,7 +4,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
+gem 'mysql2'
+gem 'activerecord'
+gem 'activerecord-native_db_types_override'
+#gem 'mysql', '~> 2.9', '>= 2.9.1'
+#gem 'activerecord-mysql-adapter', '~> 0.0.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -36,6 +41,7 @@ gem 'paperclip', '~> 5.1'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'bootstrap-glyphicons', '~> 0.0.1'
+gem 'yaml_db', '~> 0.4.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

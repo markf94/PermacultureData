@@ -1,0 +1,198 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2016-10-20 21:21:55.187985'
+    - '2016-10-20 21:21:55.187985'
+
+---
+pins:
+  columns:
+  - id
+  - commonname
+  - description
+  - created_at
+  - updated_at
+  - user_id
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  - species
+  - edible
+  records: 
+  - - 1
+    - Blue Honeybell Bush
+    - Another frost hardy shrub that always delivers. It is drought hardy, evergreen,
+      fast growing and does well in the full sun or semi shade. It also flowers all
+      year and attracts butterflies. It is perfect for pots and would be a good choice
+      for a townhouse garden. It responds well to pruning and makes a neat formal
+      hedge which naturally grows to about 1.5 meters. Yon can happily cut it much
+      shorter if you’d like a short hedge to edge your garden bed or demarcate an
+      area.
+    - '2016-10-20 22:01:47.973323'
+    - '2016-10-21 00:59:01.500800'
+    - 1
+    - scrub.png
+    - image/png
+    - 121907
+    - '2016-10-21 00:37:11.444133'
+    - Freylinia tropica
+    - 'No'
+  - - 6
+    - Tree Tumbo
+    - Welwitschia is a monotypic gymnosperm genus, comprising solely the distinctive
+      Welwitschia mirabilis. The plant is commonly known simply as welwitschia in
+      English, but the name tree tumbo is also used. It is called kharos or khurub
+      in Nama, tweeblaarkanniedood in Afrikaans, nyanka in Damara, and onyanga in
+      Herero. Welwitschia is the only living genus of the family Welwitschiaceae and
+      order Welwitschiales, in the division Gnetophyta. Informal sources commonly
+      refer to the plant as a "living fossil".[2][3] Welwitschia mirabilis is endemic
+      to the Namib desert within Namibia and Angola.
+    - '2016-10-20 22:18:12.129701'
+    - '2016-10-21 00:58:32.320571'
+    - 1
+    - bigtree2.png
+    - image/png
+    - 81492
+    - '2016-10-21 00:36:20.120635'
+    - Welwitschia mirabilis Hook.f.
+    - 'No'
+  - - 7
+    - Wild Licorice
+    - The plant is best known for its seeds, which are used as beads and in percussion
+      instruments, and which are toxic because of the presence of abrin. Ingestion
+      of a single seed, well chewed, can be fatal to both adults and children.[5]
+      The plant is native to India and grows in tropical and subtropical areas of
+      the world where it has been introduced. It has a tendency to become weedy and
+      invasive where it has been introduced.
+    - '2016-10-20 22:38:15.006351'
+    - '2016-10-21 00:57:53.078941'
+    - 1
+    - bigtree.png
+    - image/png
+    - 88091
+    - '2016-10-21 00:35:40.646145'
+    - Abrus precatorius L.
+    - 'Yes'
+  - - 8
+    - Wild Dagga
+    - Another drought hardy, evergreen shrub that is very dependable. It is common
+      and widespread throughout South Africa and grows amongst rocks in our grasslands.
+      It is fast growing and there are yellow, orange or white flowering forms. The
+      flowers are good for the vase but you do want to leave many on the bushes as
+      they attract the sunbirds and the insect eaters. They are also good for a butterfly
+      garden as they are the larval host for the Bush Bronze butterfly. They flower
+      in autumn and will need cutting back at the end of winter. A must for a bird
+      garden as once you get to recognize the sunbirds chirping, you will be very
+      pleased that you are making them happy. It has been admired since 1652 and was
+      growing in the Chelsea Physic Garden in London in 1712. It is called Wild Dagga
+      as the Khoi smoked the dried leaves and it was said to be narcotic. It is considered
+      to be a miracle plant as it is used medicinally to reduce blood pressure, for
+      arthritis, sores that will not heal, athletes foot and nits. The leaves are
+      used for headaches, coughs, colds, convulsions, weak joints, cataracts, hemorrhoids,
+      a diuretic and for obesity. The roots are used for snake bite and to keep snakes
+      away. The flowers are used for asthma, haemorrhoids, headaches, chest problems,
+      bronchitis, tapeworm, TB, jaundice, skin diseases, muscular cramps, bee and
+      scorpion stings. A wealth of uses. It is now planted in Australia.
+    - '2016-10-21 00:37:45.490923'
+    - '2016-10-21 01:26:22.061721'
+    - 1
+    - scrub2.png
+    - image/png
+    - 94681
+    - '2016-10-21 00:37:45.289741'
+    - Leonotis leonurus
+    - 'Yes'
+  - - 9
+    - Wild date palm
+    - "The plants are unisexual and florets appear at the top of the palm stem. Male
+      florets are a dirty, pale yellow and fall off after blooming; females are small,
+      globose and yellow-green.[2] This species grows edible, oblong fruit, orange
+      in color (when ripe), at 2.5 cm in diameter. The fruit are borne in large, pendant
+      clusters and contain one seed each.[2]\r\n\r\nPalms across the Phoenix genus
+      readily hybridize with one another resulting in naturally occurring variations.
+      They usually tolerate salt-spray, and moderate drought where the water table
+      is permanently high."
+    - '2016-10-21 09:00:59.280629'
+    - '2016-10-21 09:00:59.280629'
+    - 1
+    - bigtree.png
+    - image/png
+    - 88091
+    - '2016-10-21 09:00:59.046023'
+    - Phoenix reclinata
+    - 'No'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - markfingerhuth@protonmail.com
+    - "$2a$11$50c.T6GXMiBJh0vrEnOoGuABWJQJiGNw8IKaBwTpZSl6574SxlWUO"
+    - 
+    - 
+    - 
+    - 7
+    - '2016-10-21 08:59:03.540398'
+    - '2016-10-21 01:24:54.508107'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2016-10-20 22:26:47.898482'
+    - '2016-10-21 08:59:03.541458'
+
+---
+votes:
+  columns:
+  - id
+  - votable_type
+  - votable_id
+  - voter_type
+  - voter_id
+  - vote_flag
+  - vote_scope
+  - vote_weight
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Pin
+    - 7
+    - User
+    - 1
+    - true
+    - 
+    - 1
+    - '2016-10-21 00:10:46.403684'
+    - '2016-10-21 00:10:46.403684'
+  - - 2
+    - Pin
+    - 8
+    - User
+    - 1
+    - true
+    - 
+    - 1
+    - '2016-10-21 08:59:12.603386'
+    - '2016-10-21 08:59:12.603386'

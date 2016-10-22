@@ -116,3 +116,18 @@ nav {
 textarea {
 	min-height: 250px;
 }
+
+/* Trying out clickable icons with colour change */
+
+a {
+	color:  black; //colour when not hovered
+}
+
+a:hover {
+	color:  black;
+	text-decoration: none; //get rid of underscore
+}
+
+a:hover > .glyphicon-leaf { //when hovering over the icon
+	color: #d00000;
+ }

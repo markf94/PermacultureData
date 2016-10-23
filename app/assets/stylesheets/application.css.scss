@@ -52,6 +52,32 @@ h1, h2, h3, h4, h5, h6 {
   z-index:1000;
 }
 
+.glyphicon-container{
+	margin-right: 10px;
+	float: right;
+	height: 40px;
+	position:relative;
+  z-index:1000;
+}
+
+.submenu-glyphicon-container{
+	//margin-right: 10px;
+	float: left;
+	height: 40px;
+	position:relative;
+  z-index:1000;
+}
+
+.glyphicon {
+	margin-top: 13px;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+.glyphicon-chevron-down {
+	margin-top: 12px;
+}
+
 .nav-container {
 	width: 203px
 }

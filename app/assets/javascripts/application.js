@@ -17,9 +17,22 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
-$('#pv1').on('shown.bs.collapse', function() {
+/*
+$('.collapse').on('shown.bs.collapse', function() {
   $(this).parent().find(".caret-down").removeClass("caret-down").addClass("caret-up");
 }).on('hidden.bs.collapse', function() {
   $(this).parent().find(".caret-up").removeClass("caret-up").addClass("caret-down");
-}))};
+});*/
+$('ul.nav li').hover(function() {
+      $('#menu-caret').addClass('glyphicon-chevron-up');
+      $('#menu-caret').removeClass('glyphicon-chevron-down');
+    }, function() {
+      $('#menu-caret').addClass('glyphicon-chevron-down');
+      $('#menu-caret').removeClass('glyphicon-chevron-up');
+    });
+
+$('.collapse').on('shown.bs.collapse', function() {
+  $(this).parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+}).on('hidden.bs.collapse', function() {
+  $(this).parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+});

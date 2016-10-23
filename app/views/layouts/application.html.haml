@@ -49,7 +49,7 @@
 						%li= link_to "Submenu2" #, new_pin_path
 
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down
+						%span.glyphicon.glyphicon-chevron-down{:id => 'menu-caret2'}
 					%li{:href => "#pv2", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Protective", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv2'}

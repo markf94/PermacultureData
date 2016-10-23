@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 100;
 }
 
-nav {
+.navbar-default {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	.navbar-brand {
 		a {
@@ -38,6 +38,31 @@ nav {
 			}
 		}
 	}
+}
+
+.navbar-fixed-side {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+}
+
+.caret-container {
+	margin-right: 10px;
+	float: right;
+	height: 40px;
+	position:relative;
+  z-index:1000;
+}
+
+.nav-container {
+	width: 203px
+}
+
+.caret-up {
+	border-top-width: 0;
+	border-bottom: 4px solid;
+	margin-top: 20px;
+}
+.caret-down {
+	margin-top: 20px;
 }
 
 #pins {

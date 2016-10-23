@@ -16,3 +16,10 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+$('#pv1').on('shown.bs.collapse', function() {
+  $(this).parent().find(".caret-down").removeClass("caret-down").addClass("caret-up");
+}).on('hidden.bs.collapse', function() {
+  $(this).parent().find(".caret-up").removeClass("caret-up").addClass("caret-down");
+}))};

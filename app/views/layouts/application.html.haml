@@ -19,7 +19,73 @@
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "Sign Up", new_user_registration_path
 					%li= link_to "Sign In", new_user_session_path
-	.container
-		- flash.each do |name, msg|
-			= content_tag :div, msg, class: "alert alert-info"
-		= yield
+
+	%col-sm-3.col-lg-2
+		.container-fluid
+
+			%nav.navbar.navbar-default.navbar-fixed-side.nav-pills.nav-stacked
+				-# %ul.nav.navbar-nav.navbar-left
+				-# <ul class="nav nav-pills nav-stacked collapse in" id="p1">
+				-# <li data-toggle="collapse" data-parent="#p1" href="#pv1">
+				-# <a class="nav-container list-group-item">Leist<div class="caret-container"><span class="caret caret-down"></span></div></a>
+				-# </li>
+				-# <ul class="nav nav-pills nav-stacked collapse out" id="pv1">
+				-#	<li><a href="" class="list-group-item">sub1111</a></li>
+				-#	<li><a href="" class="list-group-item">sub2222</a></li>
+				-#	</ul>
+				-#	</ul>
+				%ul.nav.navbar-left.nav-pills.nav-stacked.collapse.in{:id => 'p1'}
+					.caret-container
+						%span.caret.caret-down
+					%li{:href => "#pv1", :data => {:toggle => 'collapse', :parent => '#p1'}}
+						= link_to "Soil Building", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+					%ul.nav.nav-stacked.collapse.out{:id => 'pv1'}
+						%li= link_to "Submenu1" #, new_pin_path
+						%li= link_to "Submenu2" #, new_pin_path
+
+					.caret-container
+						%span.caret.caret-down
+					%li{:href => "#pv2", :data => {:toggle => 'collapse', :parent => '#p1'}}
+						= link_to "Protective", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+					%ul.nav.nav-stacked.collapse.out{:id => 'pv2'}
+						%li= link_to "Submenu1" #, new_pin_path
+						%li= link_to "Submenu2" #, new_pin_path
+
+					.caret-container
+						%span.caret.caret-down
+					%li{:href => "#pv3", :data => {:toggle => 'collapse', :parent => '#p1'}}
+						= link_to "Adaptive", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+					%ul.nav.nav-stacked.collapse.out{:id => 'pv3'}
+						%li= link_to "Submenu1" #, new_pin_path
+						%li= link_to "Submenu2" #, new_pin_path
+
+					.caret-container
+						%span.caret.caret-down
+					%li{:href => "#pv4", :data => {:toggle => 'collapse', :parent => '#p1'}}
+						= link_to "Utility", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+					%ul.nav.nav-stacked.collapse.out{:id => 'pv4'}
+						%li= link_to "Submenu1" #, new_pin_path
+						%li= link_to "Submenu2" #, new_pin_path
+
+					.caret-container
+						%span.caret.caret-down
+					%li{:href => "#pv5", :data => {:toggle => 'collapse', :parent => '#p1'}}
+						= link_to "Wildlife", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+					%ul.nav.nav-stacked.collapse.out{:id => 'pv5'}
+						%li= link_to "Submenu1" #, new_pin_path
+						%li= link_to "Submenu2" #, new_pin_path
+
+					.caret-container
+						%span.caret.caret-down
+					%li{:href => "#pv6", :data => {:toggle => 'collapse', :parent => '#p1'}}
+						= link_to "Cultural", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+					%ul.nav.nav-stacked.collapse.out{:id => 'pv6'}
+						%li= link_to "Submenu1" #, new_pin_path
+						%li= link_to "Submenu2" #, new_pin_path
+
+	%col-sm-9.col-lg-10
+
+		.container
+			- flash.each do |name, msg|
+				= content_tag :div, msg, class: "alert alert-info"
+			= yield

@@ -36,20 +36,21 @@
 				-#	</ul>
 				%ul.nav.navbar-left.nav-pills.nav-stacked.collapse.in{:id => 'p1'}
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down{:id => 'menu-caret'}
+						%span.glyphicon.glyphicon-chevron-down
 					%li{:href => "#pv1", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Soil Building", new_pin_path, {:class => 'nav-container'} #, new_pin_path
-					%ul.nav.nav-stacked.collapse.out{:id => 'pv1'}
+					%ul.nav.nav-stacked.collapse.out.divider{:id => 'pv1'}
 						.submenu-glyphicon-container
 							%span.glyphicon.glyphicon-star
 						%li
-							%a{href: '#', onclick: 'my_function(); return false;'} Submenu1,
+							%a Submenu1
+							-# {href: '#', onclick: 'my_function(); return false;'}
 						.submenu-glyphicon-container
 							%span.glyphicon.glyphicon-leaf
-						%li= link_to "Submenu2" #, new_pin_path
+						%li= link_to "Submenu2", '/'
 
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down{:id => 'menu-caret2'}
+						%span.glyphicon.glyphicon-chevron-down
 					%li{:href => "#pv2", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Protective", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv2'}

@@ -39,3 +39,9 @@ $('.collapse').on('shown.bs.collapse', function() {
 }).on('hidden.bs.collapse', function() {
   $(this).parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
 })});
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});

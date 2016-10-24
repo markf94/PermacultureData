@@ -1,18 +1,16 @@
-#pins.transitions-enabled
-	- @pins.each do |pin|
-		.box.panel.panel-default
-			= link_to (image_tag pin.image.url), pin
-			%h2= link_to pin.commonname, pin
-			%a
-				%span.glyphicon.glyphicon-leaf
-			%a
-				%span.glyphicon.glyphicon-heart
-			- if pin.edible == "Yes"
-				%span.glyphicon.glyphicon-star
-			%p.user
-				= pin.species
-
-				-#Submitted by
-					= pin.user.email
-					%span.glyphicon.glyphicons-fast-food
-				
+- if @pins.present?
+	#pins.transition-enabled
+		- @pins.each do |pin|
+			.box.panel.panel-default
+				= link_to (image_tag pin.image.url), pin
+				%h2= link_to pin.commonname, pin
+				%a
+					%span.glyphicon.glyphicon-leaf
+				%a
+					%span.glyphicon.glyphicon-heart
+				- if pin.edible == "Yes"
+					%span.glyphicon.glyphicon-star
+				%p.user
+					= pin.species
+- else
+	%p There are no pins containing the term(s) #{params[:search]}.

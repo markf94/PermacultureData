@@ -9,7 +9,9 @@
 	%nav.navbar.navbar-default
 		.container
 			.navbar-brand= link_to "Permaculture Database", root_path
-
+			= form_tag(pins_path, :method => "get", id: "search-form") do
+				= text_field_tag :search, params[:search], placeholder: "Search Pins"
+				= submit_tag "Search"
 			- if user_signed_in?
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "New Pin", new_pin_path
@@ -36,21 +38,22 @@
 				-#	</ul>
 				%ul.nav.navbar-left.nav-pills.nav-stacked.collapse.in{:id => 'p1'}
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down
+						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow1'}
 					%li{:href => "#pv1", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Soil Building", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out.divider{:id => 'pv1'}
-						.submenu-glyphicon-container
-							%span.glyphicon.glyphicon-star
 						%li
-							%a Submenu1
-							-# {href: '#', onclick: 'my_function(); return false;'}
-						.submenu-glyphicon-container
-							%span.glyphicon.glyphicon-leaf
-						%li= link_to "Submenu2", '/'
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-star
+							%a{:id => 'test', :name => 'test'} Submenu1
+							-# {onclick: 'colourchanger(this);return false;'}
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-leaf
+							%a{onclick: 'colourchanger(this);'} Submenu2
 
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down
+						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow2'}
 					%li{:href => "#pv2", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Protective", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv2'}
@@ -62,7 +65,7 @@
 						%li= link_to "Submenu2" #, new_pin_path
 
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down
+						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow3'}
 					%li{:href => "#pv3", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Adaptive", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv3'}
@@ -70,7 +73,7 @@
 						%li= link_to "Submenu2" #, new_pin_path
 
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down
+						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow4'}
 					%li{:href => "#pv4", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Utility", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv4'}
@@ -78,7 +81,7 @@
 						%li= link_to "Submenu2" #, new_pin_path
 
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down
+						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow5'}
 					%li{:href => "#pv5", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Wildlife", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv5'}
@@ -86,7 +89,7 @@
 						%li= link_to "Submenu2" #, new_pin_path
 
 					.glyphicon-container
-						%span.glyphicon.glyphicon-chevron-down
+						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow6'}
 					%li{:href => "#pv6", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Cultural", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv6'}

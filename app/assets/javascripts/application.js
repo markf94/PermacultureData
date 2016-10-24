@@ -16,29 +16,89 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
-/*
+
+function colourchanger(el) {
+  var $me = $(el);
+  var color = $me.parent().find(".glyphicon").css('color');
+  if (color != 'red'){
+    $me.parent().find(".glyphicon").css("color", "red");
+  }
+  if (color == 'red'){
+    $me.parent().find(".glyphicon").css("color", "blue");
+  }
+}
+
 $(document).ready(function(){
-      $('#menu-caret').addClass('glyphicon-chevron-up');
-      $('#menu-caret').removeClass('glyphicon-chevron-down');
-    }, function() {
-      $('#menu-caret').addClass('glyphicon-chevron-down');
-      $('#menu-caret').removeClass('glyphicon-chevron-up');
+
+$('#test').on('click', function(){
+  var $me = $('#test');
+  var color = $me.parent().find(".glyphicon").css('color');
+  if (color != 'red'){
+  colourchanger($('#test'));
+  }else{
+  $me.parent().find(".glyphicon").css("color", "blue");
+  }
+});
 });
 
-$(document).ready(function(){
-      $('#menu-caret2').addClass('glyphicon-chevron-up');
-      $('#menu-caret2').removeClass('glyphicon-chevron-down');
-    }, function() {
-      $('#menu-caret2').addClass('glyphicon-chevron-down');
-      $('#menu-caret2').removeClass('glyphicon-chevron-up');
-});*/
 
+/* -------------------- ARROW DIRECTION CHANGE IN ACCORDEON MENU -------------------*/
+
+/*
 $(document).ready(function(){
 $('.collapse').on('shown.bs.collapse', function() {
   $(this).parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
 }).on('hidden.bs.collapse', function() {
   $(this).parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-})});
+})});*/
+
+$(document).ready(function(){
+  $('#pv1.collapse').on('shown.bs.collapse', function() {
+  $('#arrow1').parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+  }).on('hidden.bs.collapse', function() {
+    $('#arrow1').parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+  });
+});
+
+$(document).ready(function(){
+  $('#pv2.collapse').on('shown.bs.collapse', function() {
+  $('#arrow2').parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+  }).on('hidden.bs.collapse', function() {
+    $('#arrow2').parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+  });
+});
+
+$(document).ready(function(){
+  $('#pv3.collapse').on('shown.bs.collapse', function() {
+  $('#arrow3').parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+  }).on('hidden.bs.collapse', function() {
+    $('#arrow3').parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+  });
+});
+
+$(document).ready(function(){
+  $('#pv4.collapse').on('shown.bs.collapse', function() {
+  $('#arrow4').parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+  }).on('hidden.bs.collapse', function() {
+    $('#arrow4').parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+  });
+});
+
+$(document).ready(function(){
+  $('#pv5.collapse').on('shown.bs.collapse', function() {
+  $('#arrow5').parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+  }).on('hidden.bs.collapse', function() {
+    $('#arrow5').parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+  });
+});
+
+$(document).ready(function(){
+  $('#pv6.collapse').on('shown.bs.collapse', function() {
+  $('#arrow6').parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+  }).on('hidden.bs.collapse', function() {
+    $('#arrow6').parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+  });
+});
 
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {

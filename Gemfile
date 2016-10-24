@@ -42,6 +42,7 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'bootstrap-glyphicons', '~> 0.0.1'
 gem 'yaml_db', '~> 0.4.2'
+gem 'elastic_searchable'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

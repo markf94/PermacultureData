@@ -1,0 +1,16 @@
+- if @plants.present?
+	#plants.transition-enabled
+		- @plants.each do |plant|
+			.box.panel.panel-default
+				= link_to (image_tag plant.image.url), plant
+				%h2= link_to plant.commonname, plant
+				%a
+					%span.glyphicon.glyphicon-leaf
+				%a
+					%span.glyphicon.glyphicon-heart
+				- if plant.edible == true
+					%span.glyphicon.glyphicon-star
+				%p.user
+					= plant.species
+- else
+	%p There are no plants containing the term(s) #{params[:search]}.

@@ -6,14 +6,14 @@ ar_internal_metadata:
   - value
   - created_at
   - updated_at
-  records: 
+  records:
   - - environment
     - development
     - '2016-10-20 21:21:55.187985'
     - '2016-10-20 21:21:55.187985'
 
 ---
-pins:
+plants:
   columns:
   - id
   - commonname
@@ -27,7 +27,7 @@ pins:
   - image_updated_at
   - species
   - edible
-  records: 
+  records:
   - - 1
     - Blue Honeybell Bush
     - Another frost hardy shrub that always delivers. It is drought hardy, evergreen,
@@ -147,13 +147,13 @@ users:
   - last_sign_in_ip
   - created_at
   - updated_at
-  records: 
+  records:
   - - 1
     - markfingerhuth@protonmail.com
     - "$2a$11$50c.T6GXMiBJh0vrEnOoGuABWJQJiGNw8IKaBwTpZSl6574SxlWUO"
-    - 
-    - 
-    - 
+    -
+    -
+    -
     - 7
     - '2016-10-21 08:59:03.540398'
     - '2016-10-21 01:24:54.508107'
@@ -175,24 +175,24 @@ votes:
   - vote_weight
   - created_at
   - updated_at
-  records: 
+  records:
   - - 1
-    - Pin
+    - Plant
     - 7
     - User
     - 1
     - true
-    - 
+    -
     - 1
     - '2016-10-21 00:10:46.403684'
     - '2016-10-21 00:10:46.403684'
   - - 2
-    - Pin
+    - Plant
     - 8
     - User
     - 1
     - true
-    - 
+    -
     - 1
     - '2016-10-21 08:59:12.603386'
     - '2016-10-21 08:59:12.603386'

@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :pins do
+  resources :plants do
     member do
-      put "like", to: "pins#upvote"
+      put "like", to: "plants#upvote"
     end
   end
 
-  root "pins#index" #defines the root of the website
+  root "plants#index" #defines the root of the website
 end

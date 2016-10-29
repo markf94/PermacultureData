@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029170621) do
+ActiveRecord::Schema.define(version: 20161029173539) do
 
-  create_table "pins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "plants", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "commonname"
     t.text     "description",        limit: 65535
     t.datetime "created_at",                       null: false
@@ -23,7 +23,43 @@ ActiveRecord::Schema.define(version: 20161029170621) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.string   "species"
-    t.index ["user_id"], name: "index_pins_on_user_id", using: :btree
+    t.string   "zuluname"
+    t.integer  "treenumber"
+    t.string   "size"
+    t.string   "category"
+    t.string   "origin"
+    t.text     "links",              limit: 65535
+    t.boolean  "nitrogen_fixer"
+    t.boolean  "deciduous"
+    t.boolean  "semi_deciduous"
+    t.boolean  "chop_and_drop"
+    t.boolean  "evergreen"
+    t.boolean  "windbreak"
+    t.boolean  "fire_retardent"
+    t.boolean  "shade"
+    t.boolean  "security"
+    t.boolean  "hedge"
+    t.boolean  "edible"
+    t.boolean  "medicinal"
+    t.boolean  "useful"
+    t.boolean  "timber_furniture"
+    t.boolean  "timber_building"
+    t.boolean  "fire_wood"
+    t.boolean  "fodder"
+    t.boolean  "drought_tolerant"
+    t.boolean  "salt_tolerant"
+    t.boolean  "frost_tolerant"
+    t.boolean  "waterlogging"
+    t.boolean  "wind_resistant"
+    t.boolean  "bird_attracting"
+    t.boolean  "butterfly_host"
+    t.boolean  "beneficial_insects"
+    t.boolean  "apiculture"
+    t.boolean  "bat_attractor"
+    t.boolean  "attractive_flowers"
+    t.boolean  "attractive_fruit"
+    t.boolean  "attractive_foliage"
+    t.index ["user_id"], name: "index_plants_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

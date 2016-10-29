@@ -1,0 +1,24 @@
+#plant_show.row
+	.col-md-8.col-md-offset-2
+		.panel.panel-default
+			.panel-heading.plant_image
+				= image_tag @plant.image.url
+			.panel-body
+				%h1= @plant.commonname
+				%p.description= @plant.species
+				%p.description= @plant.edible
+				%p.description= @plant.description
+			.panel-footer
+				.row
+					.col-md-6
+						%p.user
+							Submitted by
+							= @plant.user.email
+					.col-md-6
+						.btn-group.pull-right
+							= link_to like_plant_path(@plant), method: :put, class: "btn btn-default" do
+								%span.glyphicon.glyphicon-heart
+								= @plant.get_upvotes.size
+							- if user_signed_in?
+								= link_to "Edit", edit_plant_path, class: "btn btn-default"
+								= link_to "Delete", plant_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"

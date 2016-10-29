@@ -1,4 +1,4 @@
-class Pin < ApplicationRecord
+class Plant < ApplicationRecord
   acts_as_votable
   belongs_to :user
 

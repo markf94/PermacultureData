@@ -11,7 +11,7 @@
 			.navbar-brand= link_to "Durban/KZN Plant Database", root_path
 			- if user_signed_in?
 				%ul.nav.navbar-nav.navbar-right
-					%li= link_to "New Pin", new_pin_path
+					%li= link_to "New Plant", new_plant_path
 					%li= link_to "Account", edit_user_registration_path
 					%li= link_to "Sign Out", destroy_user_session_path, method: :delete
 			- else
@@ -19,7 +19,7 @@
 					%li= link_to "Sign Up", new_user_registration_path
 					%li= link_to "Sign In", new_user_session_path
 			%ul.nav.navbar-nav.navbar-search
-				= form_tag(pins_path, :method => "get", id: "search-form") do
+				= form_tag(plants_path, :method => "get", id: "search-form") do
 					= text_field_tag :search, params[:search], placeholder: "Search Plants"
 					= submit_tag "Search"
 
@@ -41,7 +41,7 @@
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow1'}
 					%li{:href => "#pv1", :data => {:toggle => 'collapse', :parent => '#p1'}}
-						= link_to "Soil Building", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+						= link_to "Soil Building", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out.divider{:id => 'pv1'}
 						%li
 							.submenu-glyphicon-container
@@ -56,50 +56,50 @@
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow2'}
 					%li{:href => "#pv2", :data => {:toggle => 'collapse', :parent => '#p1'}}
-						= link_to "Protective", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+						= link_to "Protective", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv2'}
 						.submenu-glyphicon-container
 							%span.glyphicon.glyphicon-heart
-						%li= link_to "Submenu1" #, new_pin_path
+						%li= link_to "Submenu1" #, new_plant_path
 						.submenu-glyphicon-container
 							%span.glyphicon.glyphicon-tint
-						%li= link_to "Submenu2" #, new_pin_path
+						%li= link_to "Submenu2" #, new_plant_path
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow3'}
 					%li{:href => "#pv3", :data => {:toggle => 'collapse', :parent => '#p1'}}
-						= link_to "Adaptive", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+						= link_to "Adaptive", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv3'}
-						%li= link_to "Submenu1" #, new_pin_path
-						%li= link_to "Submenu2" #, new_pin_path
+						%li= link_to "Submenu1" #, new_plant_path
+						%li= link_to "Submenu2" #, new_plant_path
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow4'}
 					%li{:href => "#pv4", :data => {:toggle => 'collapse', :parent => '#p1'}}
-						= link_to "Utility", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+						= link_to "Utility", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv4'}
 						.submenu-glyphicon-container
 							%span.glyphicon.glyphicon-leaf
-						%li= link_to "Edible" #, new_pin_path
+						%li= link_to "Edible" #, new_plant_path
 						.submenu-glyphicon-container
 							%span.glyphicon.glyphicon-star
-						%li= link_to "Medicinal" #, new_pin_path
+						%li= link_to "Medicinal" #, new_plant_path
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow5'}
 					%li{:href => "#pv5", :data => {:toggle => 'collapse', :parent => '#p1'}}
-						= link_to "Wildlife", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+						= link_to "Wildlife", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv5'}
-						%li= link_to "Submenu1" #, new_pin_path
-						%li= link_to "Submenu2" #, new_pin_path
+						%li= link_to "Submenu1" #, new_plant_path
+						%li= link_to "Submenu2" #, new_plant_path
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow6'}
 					%li{:href => "#pv6", :data => {:toggle => 'collapse', :parent => '#p1'}}
-						= link_to "Cultural", new_pin_path, {:class => 'nav-container'} #, new_pin_path
+						= link_to "Cultural", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv6'}
-						%li= link_to "Submenu1" #, new_pin_path
-						%li= link_to "Submenu2" #, new_pin_path
+						%li= link_to "Submenu1" #, new_plant_path
+						%li= link_to "Submenu2" #, new_plant_path
 
 	%col-sm-9.col-lg-10
 

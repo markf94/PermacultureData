@@ -1,0 +1,29 @@
+= simple_form_for @plant, html: { multipart: true } do |f|
+	- if @plant.errors.any?
+		#errors
+			%h2
+				= pluralize(@plant.errors.count, "error")
+				prevented this Plant from saving
+			%ul
+				- @plant.errors.full_messages.each do |msg|
+					%li= msg
+
+	.form-group
+		= f.input :image, input_html: { class: 'form-control' }
+
+	.form-group
+		= f.input :commonname, input_html: { class: 'form-control' }
+
+	.form-group
+		= f.input :species, input_html: { class: 'form-control' }
+
+	.form-group
+		= check_box_tag(:edible, value = :edible, checked = false, options = {}) 
+		-#= f.input :edible, input_checkbox:  {:name=>"edible", :edible=>true}
+		-#= check_box(:edible, checked_value = true, unchecked_value = false)
+		-#= f.input :edible, input_html: { class: 'form-control' }
+
+	.form-group
+		= f.input :description, input_html: { class: 'form-control' }
+
+	= f.button :submit, class: "btn btn-primary"

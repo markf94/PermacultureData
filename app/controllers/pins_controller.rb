@@ -35,7 +35,7 @@ class PinsController < ApplicationController
 
   def update
     if @pin.update(pin_params)
-      redirect_to @pin, notice: "Pin was successfully updated"
+      redirect_to @pin, notice: "Plant was successfully updated"
     else
       render 'edit'
     end

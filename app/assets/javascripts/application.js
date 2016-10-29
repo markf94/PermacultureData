@@ -13,9 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require masonry/jquery.masonry
+//= require bootstrap
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+
 
 function colourchanger(el) {
   var $me = $(el);

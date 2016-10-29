@@ -8,7 +8,7 @@
 %body
 	%nav.navbar.navbar-default
 		.container
-			.navbar-brand= link_to "Permaculture Database", root_path
+			.navbar-brand= link_to "Durban/KZN Plant Database", root_path
 			- if user_signed_in?
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "New Pin", new_pin_path
@@ -20,7 +20,7 @@
 					%li= link_to "Sign In", new_user_session_path
 			%ul.nav.navbar-nav.navbar-search
 				= form_tag(pins_path, :method => "get", id: "search-form") do
-					= text_field_tag :search, params[:search], placeholder: "Search Pins"
+					= text_field_tag :search, params[:search], placeholder: "Search Plants"
 					= submit_tag "Search"
 
 	%col-sm-3.col-lg-2
@@ -45,13 +45,13 @@
 					%ul.nav.nav-stacked.collapse.out.divider{:id => 'pv1'}
 						%li
 							.submenu-glyphicon-container
-								%span.glyphicon.glyphicon-star
-							%a{:id => 'test', :name => 'test'} Submenu1
+								%span.glyphicon.glyphicon-tint
+							%a{:id => 'test', :name => 'test'} Water collecting
 							-# {onclick: 'colourchanger(this);return false;'}
 						%li
 							.submenu-glyphicon-container
-								%span.glyphicon.glyphicon-leaf
-							%a{onclick: 'colourchanger(this);'} Submenu2
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Shading
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow2'}
@@ -78,8 +78,12 @@
 					%li{:href => "#pv4", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Utility", new_pin_path, {:class => 'nav-container'} #, new_pin_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv4'}
-						%li= link_to "Submenu1" #, new_pin_path
-						%li= link_to "Submenu2" #, new_pin_path
+						.submenu-glyphicon-container
+							%span.glyphicon.glyphicon-leaf
+						%li= link_to "Edible" #, new_pin_path
+						.submenu-glyphicon-container
+							%span.glyphicon.glyphicon-star
+						%li= link_to "Medicinal" #, new_pin_path
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow5'}

@@ -43,6 +43,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'bootstrap-glyphicons', '~> 0.0.1'
 gem 'yaml_db', '~> 0.4.2'
 gem 'elastic_searchable'
+gem 'rails_refactor', '~> 1.3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -19,27 +19,29 @@
 //= require_tree .
 
 
-
-function colourchanger(el) {
+function colourchanger(el, id) {
   var $me = $(el);
   var color = $me.parent().find(".glyphicon").css('color');
-  if (color != 'red'){
-    $me.parent().find(".glyphicon").css("color", "red");
-  }
-  if (color == 'red'){
-    $me.parent().find(".glyphicon").css("color", "blue");
-  }
+  $me.parent().find(".glyphicon").css("color", "red");
+  var string = "colourchanger2(this," + id +");";
+  document.getElementById(id).setAttribute("onclick", string);
+}
+
+function colourchanger2(el, id) {
+  var $me = $(el);
+  var color = $me.parent().find(".glyphicon").css('color');
+  $me.parent().find(".glyphicon").css("color", "black");
+  var string = "colourchanger(this," + id +");";
+  document.getElementById(id).setAttribute("onclick", string);
 }
 
 $(document).ready(function(){
 
-$('#test').on('click', function(){
-  var $me = $('#test');
+$('#test2').on('click', function(){
+  var $me = $('#test2');
   var color = $me.parent().find(".glyphicon").css('color');
   if (color != 'red'){
-  colourchanger($('#test'));
-  }else{
-  $me.parent().find(".glyphicon").css("color", "blue");
+    $me.parent().find(".glyphicon").css("color", "blue");
   }
 });
 });

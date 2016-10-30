@@ -41,65 +41,162 @@
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow1'}
 					%li{:href => "#pv1", :data => {:toggle => 'collapse', :parent => '#p1'}}
-						= link_to "Soil Building", new_plant_path, {:class => 'nav-container'} #, new_plant_path
+						= link_to "Soil Building", new_plant_path, {:class => 'nav-container'}
 					%ul.nav.nav-stacked.collapse.out.divider{:id => 'pv1'}
 						%li
 							.submenu-glyphicon-container
 								%span.glyphicon.glyphicon-tint
-							%a{:id => 'test', :name => 'test'} Water collecting
-							-# {onclick: 'colourchanger(this);return false;'}
+							%a{onclick: 'colourchanger(this);'} Nitrogen fixer
 						%li
 							.submenu-glyphicon-container
 								%span.glyphicon.glyphicon-cloud
-							%a{onclick: 'colourchanger(this);'} Shading
+							%a{onclick: 'colourchanger(this);'} Deciduous
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Semi-deciduous
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Chop & drop
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow2'}
 					%li{:href => "#pv2", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Protective", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv2'}
-						.submenu-glyphicon-container
-							%span.glyphicon.glyphicon-heart
-						%li= link_to "Submenu1" #, new_plant_path
-						.submenu-glyphicon-container
-							%span.glyphicon.glyphicon-tint
-						%li= link_to "Submenu2" #, new_plant_path
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Evergreen
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Windbreak
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Fire retardent
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Shade
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Security
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Hedge
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow3'}
 					%li{:href => "#pv3", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Adaptive", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv3'}
-						%li= link_to "Submenu1" #, new_plant_path
-						%li= link_to "Submenu2" #, new_plant_path
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Drought tolerant
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Waterwise
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Salt tolerant
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Frost tolerant
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Waterlogging
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Wind resistant
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow4'}
 					%li{:href => "#pv4", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Utility", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv4'}
-						.submenu-glyphicon-container
-							%span.glyphicon.glyphicon-leaf
-						%li= link_to "Edible" #, new_plant_path
-						.submenu-glyphicon-container
-							%span.glyphicon.glyphicon-star
-						%li= link_to "Medicinal" #, new_plant_path
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Edible
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Medicinal
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Useful
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Timber for furniture
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Timber for building
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Fire wood
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Fodder
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow5'}
 					%li{:href => "#pv5", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Wildlife", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv5'}
-						%li= link_to "Submenu1" #, new_plant_path
-						%li= link_to "Submenu2" #, new_plant_path
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Bird attractor
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Butterfly host
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Beneficial insect attractor
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Apiculture
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Bat attractor
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow6'}
 					%li{:href => "#pv6", :data => {:toggle => 'collapse', :parent => '#p1'}}
-						= link_to "Cultural", new_plant_path, {:class => 'nav-container'} #, new_plant_path
+						= link_to "Horticultural", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv6'}
-						%li= link_to "Submenu1" #, new_plant_path
-						%li= link_to "Submenu2" #, new_plant_path
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Attractive flowers
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-cloud
+							%a{onclick: 'colourchanger(this);'} Attractive fruit
+						%li
+							.submenu-glyphicon-container
+								%span.glyphicon.glyphicon-tint
+							%a{onclick: 'colourchanger(this);'} Attractive foilage
 
 	%col-sm-9.col-lg-10
 

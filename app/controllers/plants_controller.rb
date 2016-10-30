@@ -11,7 +11,7 @@ class PlantsController < ApplicationController
   if params[:search]
     @plants = Plant.search(params[:search]).order("created_at DESC")
   else
-    #@plants = Plant.all.order('created_at DESC')
+    @plants = Plant.all.order('created_at DESC')
   end
 
   end

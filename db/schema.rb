@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029173539) do
+ActiveRecord::Schema.define(version: 20161030132524) do
 
   create_table "plants", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "commonname"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20161029173539) do
     t.boolean  "attractive_flowers"
     t.boolean  "attractive_fruit"
     t.boolean  "attractive_foliage"
+    t.boolean  "waterwise"
     t.index ["user_id"], name: "index_plants_on_user_id", using: :btree
   end
 

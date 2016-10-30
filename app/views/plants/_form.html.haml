@@ -18,12 +18,168 @@
 		= f.input :species, input_html: { class: 'form-control' }
 
 	.form-group
-		= check_box_tag(:edible, value = :edible, checked = false, options = {}) 
-		-#= f.input :edible, input_checkbox:  {:name=>"edible", :edible=>true}
-		-#= check_box(:edible, checked_value = true, unchecked_value = false)
-		-#= f.input :edible, input_html: { class: 'form-control' }
+		= f.input :treenumber, input_html: { class: 'form-control' }
+
+	.form-group
+		= f.input :category, input_html: { class: 'form-control' }
+
+	.form-group
+		= f.input :origin, input_html: { class: 'form-control' }
+
+	.form-group
+		= f.input :links, input_html: { class: 'form-control' }
 
 	.form-group
 		= f.input :description, input_html: { class: 'form-control' }
+
+	.row
+		.col-md-3.col-md-offset-2
+			%h3 #{content_tag(:u, "Protective")}
+			%br
+
+			.form-group
+				= f.check_box :evergreen
+				= f.label :evergreen
+
+			.form-group
+				= f.check_box :windbreak
+				= f.label :windbreak
+
+			.form-group
+				= f.check_box :fire_retardent
+				= f.label :fire_retardent
+
+			.form-group
+				= f.check_box :shade
+				= f.label :shade
+
+			.form-group
+				= f.check_box :security
+				= f.label :security
+
+			.form-group
+				= f.check_box :hedge
+				= f.label :hedge
+
+		.col-md-3
+			%h3 #{content_tag(:u, "Utility")}
+			%br
+
+			.form-group
+				= f.check_box :edible
+				= f.label :edible
+
+			.form-group
+				= f.check_box :medicinal
+				= f.label :medicinal
+
+			.form-group
+				= f.check_box :useful
+				= f.label :useful
+
+			.form-group
+				= f.check_box :timber_furniture
+				= f.label :timber_furniture, "Timber for furniture"
+
+			.form-group
+				= f.check_box :timber_building
+				= f.label :timber_building, "Timber for building"
+
+			.form-group
+				= f.check_box :fire_wood
+				= f.label :fire_wood
+
+			.form-group
+				= f.check_box :fodder
+				= f.label :fodder
+
+		.col-md-3
+			%h3 #{content_tag(:u, "Adaptive")}
+			%br
+
+			.form-group
+				= f.check_box :drought_tolerant
+				= f.label :drought_tolerant
+
+			.form-group
+				= f.check_box :waterwise
+				= f.label :waterwise
+
+			.form-group
+				= f.check_box :salt_tolerant
+				= f.label :salt_tolerant
+
+			.form-group
+				= f.check_box :frost_tolerant
+				= f.label :frost_tolerant
+
+			.form-group
+				= f.check_box :waterlogging
+				= f.label :waterlogging
+
+			.form-group
+				= f.check_box :wind_resistant
+				= f.label :wind_resistant
+
+	.row
+		.col-md-3.col-md-offset-2
+			%h3 #{content_tag(:u, "Soil Building")}
+			%br
+			.form-group
+				= f.check_box :nitrogen_fixer
+				= f.label :nitrogen_fixer
+
+			.form-group
+				= f.check_box :deciduous
+				= f.label :deciduous
+
+			.form-group
+				= f.check_box :semi_deciduous
+				= f.label :semi_deciduous
+
+			.form-group
+				= f.check_box :chop_and_drop
+				= f.label :chop_and_drop
+
+
+		.col-md-3
+			%h3 #{content_tag(:u, "Wildlife")}
+			%br
+
+			.form-group
+				= f.check_box :bird_attracting
+				= f.label :bird_attracting
+
+			.form-group
+				= f.check_box :butterfly_host
+				= f.label :butterfly_host
+
+			.form-group
+				= f.check_box :beneficial_insects
+				= f.label :beneficial_insects, "Beneficial insect attractor"
+
+			.form-group
+				= f.check_box :apiculture
+				= f.label :apiculture
+
+			.form-group
+				= f.check_box :bat_attractor
+				= f.label :bat_attractor
+
+		.col-md-3
+			%h3 #{content_tag(:u, "Horticultural")}
+			%br
+
+			.form-group
+				= f.check_box :attractive_flowers
+				= f.label :attractive_flowers
+
+			.form-group
+				= f.check_box :attractive_fruit
+				= f.label :attractive_fruit
+
+			.form-group
+				= f.check_box :attractive_foliage
+				= f.label :attractive_foliage
 
 	= f.button :submit, class: "btn btn-primary"

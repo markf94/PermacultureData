@@ -57,7 +57,7 @@ class PlantsController < ApplicationController
   private # private method below
 
   def plant_params #define plant parameters
-    params.require(:plant).permit(:commonname, :description, :image, :species)
+    params.require(:plant).permit(:commonname, :description, :image, :species, :zuluname, :treenumber, :size, :category, :origin, :links, :nitrogen_fixer, :deciduous, :semi_deciduous, :chop_and_drop, :evergreen, :windbreak, :fire_retardent, :shade, :security, :hedge, :edible, :medicinal, :useful, :timber_furniture, :timber_building, :fire_wood, :fodder, :drought_tolerant, :waterwise, :salt_tolerant, :frost_tolerant, :waterlogging, :wind_resistant, :bird_attracting, :butterfly_host, :beneficial_insects, :apiculture, :bat_attractor, :attractive_flowers, :attractive_fruit, :attractive_foliage)
   end
 
   def find_plant

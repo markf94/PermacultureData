@@ -40,7 +40,7 @@
 				%ul.nav.navbar-left.nav-pills.nav-stacked.collapse.in{:id => 'p1'}
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow1'}
-					%li{:href => "#pv1", :data => {:toggle => 'collapse', :parent => '#p1'}}
+					%li{:id => "soil", :href => "#pv1", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Soil Building", new_plant_path, {:class => 'nav-container'}
 					%ul.nav.nav-stacked.collapse.out.divider{:id => 'pv1'}
 						%li
@@ -62,7 +62,7 @@
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow2'}
-					%li{:href => "#pv2", :data => {:toggle => 'collapse', :parent => '#p1'}}
+					%li{:id => "protective", :href => "#pv2", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Protective", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv2'}
 						%li
@@ -92,7 +92,7 @@
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow3'}
-					%li{:href => "#pv3", :data => {:toggle => 'collapse', :parent => '#p1'}}
+					%li{:id => "adaptive", :href => "#pv3", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Adaptive", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv3'}
 						%li
@@ -122,7 +122,7 @@
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow4'}
-					%li{:href => "#pv4", :data => {:toggle => 'collapse', :parent => '#p1'}}
+					%li{:id => "utility", :href => "#pv4", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Utility", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv4'}
 						%li
@@ -156,7 +156,7 @@
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow5'}
-					%li{:href => "#pv5", :data => {:toggle => 'collapse', :parent => '#p1'}}
+					%li{:id => "wildlife", :href => "#pv5", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Wildlife", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv5'}
 						%li
@@ -182,7 +182,7 @@
 
 					.glyphicon-container
 						%span.glyphicon.glyphicon-chevron-down{:id => 'arrow6'}
-					%li{:href => "#pv6", :data => {:toggle => 'collapse', :parent => '#p1'}}
+					%li{:id => "horticultural", :href => "#pv6", :data => {:toggle => 'collapse', :parent => '#p1'}}
 						= link_to "Horticultural", new_plant_path, {:class => 'nav-container'} #, new_plant_path
 					%ul.nav.nav-stacked.collapse.out{:id => 'pv6'}
 						%li

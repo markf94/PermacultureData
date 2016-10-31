@@ -59,8 +59,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-fixed-side {
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+	/*box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);*/
+
 	width: 240px;
+  background-color: #E9E9E9;
 }
 
 
@@ -104,26 +107,62 @@ h1, h2, h3, h4, h5, h6 {
 
 #soil {
   background-color:#e5621b;
+  margin-top: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; /* future proofing */
+  -khtml-border-radius: 5px; /* for old Konqueror browsers */
+  margin-bottom: 2px;
 }
 
 #protective {
   background-color:#05b4b7;
+  margin-top: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; /* future proofing */
+  -khtml-border-radius: 5px; /* for old Konqueror browsers */
+  margin-bottom: 2px;
 }
 
 #adaptive {
   background-color:#a83464;
+  margin-top: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; /* future proofing */
+  -khtml-border-radius: 5px; /* for old Konqueror browsers */
+  margin-bottom: 2px;
 }
 
 #utility {
   background-color:#18ce4c;
+  margin-top: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; /* future proofing */
+  -khtml-border-radius: 5px; /* for old Konqueror browsers */
+  margin-bottom: 2px;
 }
 
 #wildlife {
   background-color:#d62839;
+  margin-top: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; /* future proofing */
+  -khtml-border-radius: 5px; /* for old Konqueror browsers */
+  margin-bottom: 2px;
 }
 
 #horticultural {
   background-color:#f2a61a;
+  margin-top: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; /* future proofing */
+  -khtml-border-radius: 5px; /* for old Konqueror browsers */
+  margin-bottom: 2px;
 }
 
 .caret-up {

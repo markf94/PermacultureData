@@ -76,7 +76,7 @@
 							%a{id: "5",onclick: 'colourchanger(this,5);'} Evergreen
 						%li
 							.submenu-glyphicon-container
-								%span.glyphicon.glyphicon-cloud
+								%span.glyphicon.glyphicon-barcode
 							%a{id: "6",onclick: 'colourchanger(this,6);'} Windbreak
 						%li
 							.submenu-glyphicon-container
@@ -204,11 +204,11 @@
 							%a{id: "31",onclick: 'colourchanger(this,31);'} Attractive foilage
 
 			%select{id: "cd-dropdown", class: "cd-select"}
-				%option{value: "-1",:selected => true} Soil Building
-				%option{value: "1", class: "glyphicon glyphicon-cloud"} Nitrogen fixer
-				%option{value: "2", class: "glyphicon glyphicon-tint"} Deciduous
-				%option{value: "3", class: "glyphicon glyphicon-heart"} Semi-deciduous
-				%option{value: "4", class: "glyphicon glyphicon-star"} Chop & drop
+				%option{value: "-1",:selected => true, id: "testspan"} Soil Building
+				%option{value: "1", class: "icon-diamond"} Nitrogen fixer
+				%option{value: "2", class: "icon-paintcan"} Deciduous
+				%option{value: "3", class: "icon-wind"} Semi-deciduous
+				%option{value: "4", class: "icon-snowy"} Chop & drop
 
 	%col-sm-9.col-lg-10
 

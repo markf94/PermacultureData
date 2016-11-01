@@ -29,6 +29,11 @@ $( function() {
 
 });
 
+$(document).ready(function(){
+$(".navbar-nav ul li a").mouseup(function(){
+    $(this).blur();
+})
+});
 
 function colourchanger(el, id) {
   var $me = $(el);

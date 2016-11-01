@@ -19,6 +19,259 @@
 @import "bootstrap";
 @import 'bootstrap/glyphicons';
 
+@import url('app/assets/stylesheets/demo.css');
+@import url('app/assets/stylesheets/common.css');
+@import url('app/assets/stylesheets/icons.css');
+
+cd-dropdown > span,
+.cd-dropdown ul li:nth-last-child(-n+3) span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.cd-dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.cd-dropdown ul li {
+	position: absolute;
+	width: 100%;
+}
+
+.cd-active.cd-dropdown > span {
+	color: #4d8c9d;
+}
+
+.cd-active.cd-dropdown > span,
+.cd-active.cd-dropdown ul li span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.cd-active.cd-dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+.cd-active.cd-dropdown ul li span:hover {
+	background: #4d8c9d;
+	color: #fff;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.cd-dropdown span[class^="icon-"]:before,
+.cd-dropdown span[class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	position: absolute;
+	font-size: 40px;
+	line-height: 40px;
+	width: 50px;
+	top: 50%;
+	left: 15px;
+	margin-top: -20px;
+	text-align: center;
+}
+.icon-monkey:before {
+	content: "\38";
+}
+.icon-bear:before {
+	content: "\28";
+}
+.icon-squirrel:before {
+	content: "\6f";
+}
+.icon-elephant:before {
+	content: "\65";
+}
+.icon-google-plus:before{
+	content: "\21";
+}
+.icon-facebook:before {
+	content: "\22";
+}
+.icon-twitter:before {
+	content: "\23";
+}
+.icon-github:before {
+	content: "\24";
+}
+.icon-tux:before {
+	content: "\25";
+}
+.icon-apple:before {
+	content: "\26";
+}
+.icon-android:before {
+	content: "\27";
+}
+.icon-windows:before {
+	content: "\29";
+}
+.icon-sun:before {
+	content: "\2a";
+}
+.icon-cloudy:before {
+	content: "\2b";
+}
+.icon-weather:before {
+	content: "\2c";
+}
+.icon-lightning:before {
+	content: "\2d";
+}
+.icon-rainy:before {
+	content: "\2e";
+}
+.icon-windy:before {
+	content: "\2f";
+}
+.icon-chrome:before {
+	content: "\30";
+}
+.icon-firefox:before {
+	content: "\31";
+}
+.icon-IE:before {
+	content: "\32";
+}
+.icon-opera:before {
+	content: "\33";
+}
+.icon-safari:before {
+	content: "\34";
+}
+.icon-finder:before {
+	content: "\35";
+}
+.icon-camera:before {
+	content: "\3a";
+}
+.icon-diamond:before {
+	content: "\36";
+}
+.icon-rocket:before {
+	content: "\37";
+}
+.icon-cars:before {
+	content: "\39";
+}
+.icon-clock:before {
+	content: "\3b";
+}
+.icon-star:before {
+	content: "\3c";
+}
+
+.cd-dropdown,
+.cd-select {
+	position: relative;
+	width: 300px;
+	margin: 20px auto;
+	display: block;
+}
+
+.cd-dropdown > span {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	background: #fff;
+	display: block;
+	padding: 0 50px 0 30px;
+	position: relative;
+	cursor: pointer;
+  margin-bottom: -70px;
+  margin-left:15px;
+}
+
+.cd-dropdown > span:after {
+	content: '\25BC';
+	position: absolute;
+	right: 0px;
+	top: 15%;
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+	height: 70%;
+	line-height: 24px;
+	border-left: 1px solid #ddd;
+  color: #fff;
+}
+
+.cd-dropdown.cd-active > span:after {
+	content: '\25B2';
+}
+
+.cd-dropdown ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: relative;
+  color:#fff;
+}
+
+.cd-dropdown ul li {
+	display: block;
+  color: #fff;
+}
+
+.cd-dropdown ul li span {
+	width: 100%;
+	background: #fff;
+	line-height: 60px;
+	padding: 0 30px 0 75px;
+	display: block;
+	color: #bcbcbc;
+	cursor: pointer;
+	font-weight: 700;
+  color:#fff;
+}
+
+.cd-dropdown > span,
+.cd-dropdown ul li span {
+	-webkit-backface-visibility: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  background-color: #e5621b;
+  color: #fff;
+}
+
+.cd-dropdown > span span[class^="icon-"],
+.cd-dropdown > span span[class*=" icon-"]{
+	padding: 0 30px 0 45px;
+}
+
+/* Select fallback styling */
+.cd-select {
+	border: 1px solid #ddd;
+}
+
+
+
 /* Override Bootstrap 3 font locations*/
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -104,6 +357,78 @@ h1, h2, h3, h4, h5, h6 {
 .nav-container {
 	width: 238px;
 }
+
+/*button {
+  width:30px;
+  height:30px;
+}
+button > .glyphicon {
+  float:none;
+  margin:0 auto;
+  margin-left: -6px;
+  display: block;
+  text-align: center;
+}
+#search-form {
+  min-height:40px;
+}*/
+
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 50%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+  float:none;
+  margin:0 auto;
+  margin-left: -6px;
+  display: block;
+  text-align: center;
+}
+
 
 #soil {
   background-color:#e5621b;

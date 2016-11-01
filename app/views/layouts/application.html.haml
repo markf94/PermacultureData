@@ -4,6 +4,8 @@
 	%title Permaculture
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	= javascript_include_tag "jquery.dropdown", 'data-turbolinks-track' => true
+	= javascript_include_tag "modernizr.custom.63321", 'data-turbolinks-track' => true
 	= csrf_meta_tags
 %body
 	%nav.navbar.navbar-default
@@ -19,9 +21,12 @@
 					%li= link_to "Sign Up", new_user_registration_path
 					%li= link_to "Sign In", new_user_session_path
 			%ul.nav.navbar-nav.navbar-search
-				= form_tag(plants_path, :method => "get", id: "search-form") do
-					= text_field_tag :search, params[:search], placeholder: "Search Plants"
-					= submit_tag "Search"
+				= form_tag(plants_path, :method => "get", id: "search-form", class: "search-form") do
+					.form-group.has-feedback
+						%label{for: "search",class: "sr-only"} Search
+						= text_field_tag :search, params[:search], placeholder: "Search Plants", class: "form-control"
+						-#%button.btn.btn-default{type: "submit"}
+						%span.glyphicon.glyphicon-search.form-control-feedback
 
 	%col-sm-3.col-lg-2
 		.container-fluid
@@ -197,6 +202,13 @@
 							.submenu-glyphicon-container
 								%span.glyphicon.glyphicon-tint
 							%a{id: "31",onclick: 'colourchanger(this,31);'} Attractive foilage
+
+			%select{id: "cd-dropdown", class: "cd-select"}
+				%option{value: "-1",:selected => true} Soil Building
+				%option{value: "1", class: "glyphicon glyphicon-cloud"} Nitrogen fixer
+				%option{value: "2", class: "glyphicon glyphicon-tint"} Deciduous
+				%option{value: "3", class: "glyphicon glyphicon-heart"} Semi-deciduous
+				%option{value: "4", class: "glyphicon glyphicon-star"} Chop & drop
 
 	%col-sm-9.col-lg-10
 

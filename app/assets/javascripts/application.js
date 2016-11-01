@@ -19,6 +19,17 @@
 //= require_tree .
 
 
+$( function() {
+
+  $( '#cd-dropdown' ).dropdown( {
+    gutter : 5,
+    delay : 100,
+    random : true
+  } );
+
+});
+
+
 function colourchanger(el, id) {
   var $me = $(el);
   var color = $me.parent().find(".glyphicon").css('color');

@@ -2,6 +2,9 @@ class PlantsController < ApplicationController
   # before action finds the current plant
   before_action :find_plant, only: [:show, :edit, :update, :destroy, :upvote]
   before_action :authenticate_user!, except: [:index, :show]
+  has_scope :edible, :type => :boolean
+  has_scope :nitrogen_fixer, :type => :boolean
+
 
   def index #holds all the plants in reverse chronological order
     #@plants = Plant.all.order("created_at DESC")
@@ -11,7 +14,8 @@ class PlantsController < ApplicationController
   if params[:search]
     @plants = Plant.search(params[:search]).order("created_at DESC")
   else
-    @plants = Plant.all.order('created_at DESC')
+    @plants = apply_scopes(Plant).all
+    #@plants = Plant.all.order('created_at DESC')
   end
 
   end

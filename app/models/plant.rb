@@ -1,6 +1,9 @@
 class Plant < ApplicationRecord
   acts_as_votable
   belongs_to :user
+  #scope :nitrogen_fixer, lambda{|nitrogen_fixer| where('nitrogen_fixer = ?', nitrogen_fixer )}
+  scope :edible, -> { where(:edible => true) }
+  scope :nitrogen_fixer, -> { where(:nitrogen_fixer => true) }
 
   def self.search(search)
     where("commonname LIKE ? or species LIKE ?", "%#{search}%", "%#{search}%")

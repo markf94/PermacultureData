@@ -51,7 +51,9 @@
 						%li
 							.submenu-glyphicon-container
 								%span.glyphicon.glyphicon-tint
-							%a{id: "1", onclick: 'colourchanger(this,1);'} Nitrogen fixer
+							-#%a{id: "1", onclick: 'colourchanger(this,1);'} Nitrogen fixer
+							-#= link_to 'Nitrogen fixer', {controller: 'plants', action: 'index', :nitrogen_fixer => 'true'},{id: "1", onclick: 'colourchanger(this,1);'}
+							= link_to 'Nitrogen fixer', root_path(:nitrogen_fixer => 'true'), {id: "1", onclick: 'colourchanger(this,1);'}
 						%li
 							.submenu-glyphicon-container
 								%span.glyphicon.glyphicon-cloud
@@ -133,7 +135,9 @@
 						%li
 							.submenu-glyphicon-container
 								%span.glyphicon.glyphicon-tint
-							%a{id: "17",onclick: 'colourchanger(this,17);'} Edible
+							-#%a{id: "17",onclick: 'colourchanger(this,17);'} Edible
+							-#= link_to 'Edible', {controller: 'plants', action: 'index', :edible => 'true'},{id: "17",onclick: 'colourchanger(this,17);'}
+							= link_to 'Edible', root_path(:edible => 'true')
 						%li
 							.submenu-glyphicon-container
 								%span.glyphicon.glyphicon-cloud

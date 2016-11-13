@@ -395,9 +395,11 @@ cd-dropdown > span,
 }
 
 .cd-active.cd-dropdown > span {
-	/*color:     #4d8c9d;*/
-	background: #fff;/*#4d8c9d;*/
-	color: #e5621b;    /*#fff;*/
+	/*background: #fff;
+	color: #e5621b;    */
+	background-color: #e5621b;
+  color: #fff;
+
 }
 
 .cd-active.cd-dropdown > span,
@@ -497,7 +499,7 @@ cd-dropdown > span,
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-  background-color: #e5621b;
+	background-color: #e5621b;
   color: #fff;
 	border-radius: 10px;
 	font-family: 'Lato';
@@ -551,6 +553,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 240px;
   background-color: #E9E9E9;
 	font-family: 'Lato';
+	font-weight: bold;
 	font-size: 18px;
 }
 
